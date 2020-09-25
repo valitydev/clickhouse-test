@@ -1,5 +1,7 @@
 package com.rbkmoney.clickhouse.initializer;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.testcontainers.containers.ClickHouseContainer;
 
@@ -8,6 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Slf4j
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ChInitializer {
 
     public static void initAllScripts(ClickHouseContainer clickHouseContainer, List<String> scriptsFilePaths) throws SQLException {
