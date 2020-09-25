@@ -1,5 +1,7 @@
 package com.rbkmoney.clickhouse.initializer;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.testcontainers.containers.ClickHouseContainer;
 import ru.yandex.clickhouse.ClickHouseDataSource;
@@ -10,6 +12,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Slf4j
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ConnectionManager {
 
     public static Connection getSystemConn(ClickHouseContainer clickHouseContainer) throws SQLException {
