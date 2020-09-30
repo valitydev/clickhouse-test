@@ -13,7 +13,7 @@
     <packaging>jar</packaging>
 
     <artifactId>clickhouse-test</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 
     <name>Clickhouse test lib</name>
     <description>Utils lib for testing with clickhouse</description>
@@ -26,6 +26,18 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <organization>RBK.money</organization>
+            <organizationUrl>https://rbk.money</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/rbkmoney/kafka-common-lib.git</connection>
+        <developerConnection>scm:git:ssh://github.com/rbkmoney/kafka-common-lib.git</developerConnection>
+        <url>https://github.com/rbkmoney/kafka-common-lib/tree/master</url>
+    </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
