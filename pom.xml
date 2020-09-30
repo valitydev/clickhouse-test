@@ -13,7 +13,7 @@
     <packaging>jar</packaging>
 
     <artifactId>clickhouse-test</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 
     <name>Clickhouse test lib</name>
     <description>Utils lib for testing with clickhouse</description>
