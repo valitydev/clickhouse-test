@@ -13,7 +13,9 @@ import java.util.List;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ChInitializer {
 
-    public static void initAllScripts(ClickHouseContainer clickHouseContainer, List<String> scriptsFilePaths) throws SQLException {
+    public static void initAllScripts(
+            ClickHouseContainer clickHouseContainer,
+            List<String> scriptsFilePaths) throws SQLException {
         if (scriptsFilePaths != null && !scriptsFilePaths.isEmpty()) {
             try (Connection connection = ConnectionManager.getSystemConn(clickHouseContainer)) {
                 scriptsFilePaths.forEach(path -> execAllInFile(connection, path));
