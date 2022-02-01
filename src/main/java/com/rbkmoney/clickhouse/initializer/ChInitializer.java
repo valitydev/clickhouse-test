@@ -35,6 +35,4 @@ public class ChInitializer {
             throw new RuntimeException(String.format("Error when execAllInFile path: %s", path), e);
         }
     }
-
-
 }

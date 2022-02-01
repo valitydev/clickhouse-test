@@ -9,7 +9,6 @@ import ru.yandex.clickhouse.settings.ClickHouseProperties;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.List;
 
 @Slf4j
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -20,5 +19,4 @@ public class ConnectionManager {
         ClickHouseDataSource dataSource = new ClickHouseDataSource(clickHouseContainer.getJdbcUrl(), properties);
         return dataSource.getConnection();
     }
-
 }
