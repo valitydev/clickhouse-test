@@ -1,4 +1,4 @@
-package com.rbkmoney.clickhouse.initializer;
+package dev.vality.clickhouse.initializer;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
